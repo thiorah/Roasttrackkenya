@@ -1,0 +1,35 @@
+{
+  "data_source": "synthetic_fallback",
+  "demand_scale": 1.5,
+  "summary": {
+    "total_hours": 336,
+    "total_demand_kg": 1661836.56,
+    "total_available_supply_kg": 1399711.82,
+    "total_unmet_kg": 295088.22,
+    "supply_gap_hours": 255,
+    "total_dispatch_cost": 636793513.94,
+    "rf_mae_kgh": 136.956,
+    "rf_rmse_kgh": 184.507,
+    "lr_mae_kgh": 162.043,
+    "lr_rmse_kgh": 211.501
+  },
+  "metrics": {
+    "split_index": 268,
+    "linear_regression": {
+      "mae_kgh": 162.043,
+      "rmse_kgh": 211.501
+    },
+    "random_forest": {
+      "mae_kgh": 136.956,
+      "rmse_kgh": 184.507
+    },
+    "feature_importances": {
+      "hour_sin": 0.014,
+      "hour_cos": 0.0179,
+      "day_sin": 0.003,
+      "day_cos": 0.0031,
+      "temperature_c": 0.958,
+      "irradiance_wm2": 0.0041
+    }
+  }
+}
